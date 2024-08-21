@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    
+    display: flex;
+    align-items: center;
+
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+
+    z-index: 3;
+}
+
+.navbar.scrolled {
+    height: 80px;
+    background-color: #f7f4f2; /* Background color after scrolling */
+}
+
+.navbar.hidden {
+    background-color: transparent;
+}
+
+.navbar.hidden img{
+    opacity: 0;
+}
+
+.navbar .logo{
+    margin-left: -130px;
+    width: 200px; /* Fixed width for the logo */
+    height: 40px; /* Maintains aspect ratio */
+    transition: none; /* Prevents scaling on scroll */
+}
