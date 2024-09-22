@@ -1,6 +1,5 @@
-let isScrolling;
-        const navbar = document.getElementById('navbar');
 
+        const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', function() {
             // Check scroll position and add/remove the scrolled class
             if (window.scrollY > 50) { // Adjust the scroll threshold as needed
@@ -11,10 +10,8 @@ let isScrolling;
             
             // Clear any existing timeout
             window.clearTimeout(isScrolling);
-
             // Remove the hidden class if scrolling
             navbar.classList.remove('hidden');
-
             // Set a timeout to add the hidden class after scrolling stops
             isScrolling = setTimeout(function() {
                 navbar.classList.add('hidden');
