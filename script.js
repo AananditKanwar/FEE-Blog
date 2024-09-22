@@ -1,5 +1,5 @@
-
-        const navbar = document.getElementById('navbar');
+let isScrolling;
+        const navbar = document.getElementById('navbaro');
         window.addEventListener('scroll', function() {
             // Check scroll position and add/remove the scrolled class
             if (window.scrollY > 50) { // Adjust the scroll threshold as needed
