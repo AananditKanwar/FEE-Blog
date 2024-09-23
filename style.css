@@ -11,6 +11,10 @@ html {
 
 }
 
+body{
+    background-color: #f7f4f2;
+}
+
 .hero{
     width: 100%;
     position: relative;
@@ -39,7 +43,7 @@ html {
 
 .navbar.scrolled {
     height: 80px;
-    background-color: #f7f4f2; /* Background color after scrolling */
+    background-color: #f7f4f2; 
 }
 
 .navbar.hidden {
