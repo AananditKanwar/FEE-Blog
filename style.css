@@ -53,7 +53,7 @@ html {
 .navbar .logo{
     margin-left: -130px;
     width: 200px; /* Fixed width for the logo */
-    height: 40px; /* Maintains aspect ratio */
+    height: 60px; /* Maintains aspect ratio */
     transition: none; /* Prevents scaling on scroll */
 }
 
@@ -62,6 +62,7 @@ html {
     width: 100%;
     align-items: center;
     justify-content: center;
+    padding-top: 120px;
     padding-bottom: 3rem;
 }
 
@@ -71,8 +72,8 @@ html {
     margin-bottom: 32px;
     color: #1c212b;
     font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 900;
-    font-size: 72px;
+    font-weight: 1000;
+    font-size: 92px;
     line-height: 1.1;
     
 }
@@ -81,11 +82,12 @@ html {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 0;
+    margin: auto;
     padding: 20px;
-    align-items: center;
+    width: 80%;
+    align-items: start; /* Ensure the items align to the start */
     justify-content: center;
-
 }
 
 .grid-item {
@@ -94,22 +96,35 @@ html {
     border-radius: 10px;
     width: 80%;
     margin-left: 10%;
+    height: 800px;
     overflow: hidden;
+}
+
+.grid-item:nth-child(even) {
+    margin-top: 150px; /* Adjust the gap to your preference */
 }
 
 .grid-item img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 80%;
+    object-fit: cover;
 }
 
 .cont {
-    padding: 20px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    padding: 40px;
+    height: auto;
+}
+
+.cont h2{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 .date {
     color: #888;
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
