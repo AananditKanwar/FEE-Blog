@@ -301,3 +301,59 @@ h2 {
     transition: 0.3s;
 }
 
+/*Subsciption form*/
+.parent{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.grid{
+    font-family: "Bricolage Grotesque", sans-serif;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; 
+}
+
+.grid h2{
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.text-field{
+    height: 50px;
+    margin-bottom: 0px;
+    padding: 0px 24px;
+    border: 1px none #000;
+    line-height: 1;
+}
+
+.grid button{
+        display: inline;
+        grid-row-start: span 1;
+    
+        grid-row-end: span 1;
+    
+        grid-column-start: span 2;
+
+        grid-column-end: span 2;
+    
+}
+.subscription-form {
+    background-color: #e0dcd9; /* Light grey background */
+    padding: 160px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%; /* Adjust as necessary */
+    max-width: 90%; /* Adjust based on desired width */
+    margin: 0 auto; /* Center the form */
+    
+}
+
+.subscription-form button:hover {
+    background-color: #333;
+}
+
